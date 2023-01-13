@@ -1,0 +1,28 @@
+{
+    "files.exclude": {
+        "**/.DS_Store": true,
+        "**/.git": true,
+        "**/.hg": true,
+        "**/.svn": true,
+        "**/CVS": true,
+        "native/": true,
+        "pc/static/img/**": true,
+        "src/static/fonts/**": true,
+        "src/static/images/**": true,
+        "src/static/svg/**": true,
+        "**/node_modules": true
+    },
+    "breadcrumbs.enabled": true,
+    "editor.minimap.renderCharacters": false,
+    "editor.formatOnSave": true,
+    "javascript.suggest.autoImports": false,
+    "prettier.jsxSingleQuote": true,
+    "prettier.trailingComma": "es5",
+    "prettier.useTabs": false,
+    "prettier.printWidth": 80,
+    "prettier.arrowParens": "avoid",
+    "search.exclude": {
+        "tools/story-book/.yarn/**": true
+    },
+    "typescript.preferences.importModuleSpecifier": "shortest"
+}
