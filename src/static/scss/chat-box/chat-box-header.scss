@@ -1,0 +1,16 @@
+.chat-box-header {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 5rem;
+    border-bottom: 1px solid var(--line-color);
+
+    .chat-box-name {
+        font-weight: 600;
+        font-size: 18px;
+    }
+    .chat-box-description {
+        color: var(--gray-500);
+    }
+}

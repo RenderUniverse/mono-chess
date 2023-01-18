@@ -1,0 +1,49 @@
+.preview-container {
+    display: flex;
+    flex-direction: column;
+    width: 24rem;
+    height: 100%;
+    border-right: 1px solid var(--line-color);
+}
+.preview-item-container {
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    transition: all var(--transition-time);
+    &:hover {
+        background-color: var(--gray-200);
+    }
+    &.focused {
+        background-color: var(--primary-outline);
+    }
+
+    .preview-avatar {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .preview-name {
+        font-size: 16px;
+    }
+    .preview-message {
+        color: var(--gray-500);
+    }
+    .preview-dttm {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        font-size: 13px;
+        color: var(--gray-500);
+    }
+}
+.preview-list {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.preview-list-content {
+    flex-grow: 1;
+}

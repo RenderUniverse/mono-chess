@@ -1,0 +1,107 @@
+@for $i from 0 through 80 {
+    $val: 0.25rem * $i;
+    .h-#{$i} {
+        height: $val;
+    }
+    .w-#{$i} {
+        width: $val;
+    }
+    .mt-#{$i} {
+        margin-top: $val;
+    }
+    .mb-#{$i} {
+        margin-bottom: $val;
+    }
+    .ml-#{$i} {
+        margin-left: $val;
+    }
+    .mr-#{$i} {
+        margin-right: $val;
+    }
+    .mx-#{$i} {
+        margin-left: $val;
+        margin-right: $val;
+    }
+    .my-#{$i} {
+        margin-top: $val;
+        margin-bottom: $val;
+    }
+    .m-#{$i} {
+        margin: $val;
+    }
+    .pt-#{$i} {
+        padding-top: $val;
+    }
+    .pb-#{$i} {
+        padding-bottom: $val;
+    }
+    .pl-#{$i} {
+        padding-left: $val;
+    }
+    .pr-#{$i} {
+        padding-right: $val;
+    }
+    .px-#{$i} {
+        padding-left: $val;
+        padding-right: $val;
+    }
+    .py-#{$i} {
+        padding-top: $val;
+        padding-bottom: $val;
+    }
+    .p-#{$i} {
+        padding: $val;
+    }
+}
+.m-auto {
+    margin: auto;
+}
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.ml-auto {
+    margin-left: auto;
+}
+.mr-auto {
+    margin-right: auto;
+}
+.w-full {
+    width: 100%;
+}
+.w-screen {
+    width: 100vw;
+}
+.h-full {
+    height: 100%;
+}
+.h-screen {
+    height: 100vh;
+}
+.h-fit {
+    height: fit-content;
+}
+.w-fit {
+    width: fit-content;
+}
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+@for $i from 1 through 20 {
+    .space-x-#{$i} > * + * {
+        margin-left: 0.25rem * $i;
+    }
+    .space-y-#{$i} > * + * {
+        margin-top: 0.25rem * $i;
+    }
+}

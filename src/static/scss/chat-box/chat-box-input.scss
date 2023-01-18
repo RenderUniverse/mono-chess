@@ -1,0 +1,24 @@
+.chat-box-input {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    min-height: 4rem;
+    border-top: 1.5px solid var(--line-color);
+    &.focused {
+        border-top: 1.5px solid var(--primary-color);
+    }
+}
+.chat-box-input-text {
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 14px;
+    flex-grow: 1;
+}
+.chat-box-input-btn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 1rem;
+}

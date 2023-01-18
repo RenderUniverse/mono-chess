@@ -14,10 +14,7 @@
         "resolveJsonModule": true,
         "isolatedModules": true,
         "noEmit": true,
-        "baseUrl": ".",
-        "paths": {
-            "*": ["src/*"]
-        },
+        "baseUrl": "src",
         "experimentalDecorators": true,
         "jsx": "react-jsx"
     },

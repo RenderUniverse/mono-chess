@@ -1,16 +1,18 @@
 {
     "files.exclude": {
-        "**/.DS_Store": true,
         "**/.git": true,
-        "**/.hg": true,
         "**/.svn": true,
+        "**/.hg": true,
         "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
         "native/": true,
         "pc/static/img/**": true,
         "src/static/fonts/**": true,
         "src/static/images/**": true,
         "src/static/svg/**": true,
-        "**/node_modules": true
+        "**/node_modules": true,
+        "**/*.decode.log": true
     },
     "breadcrumbs.enabled": true,
     "editor.minimap.renderCharacters": false,

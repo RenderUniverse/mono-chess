@@ -1,0 +1,77 @@
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+.fixed {
+    position: fixed;
+}
+.sticky {
+    position: sticky;
+    top: 0;
+}
+.flex,
+.flex-row {
+    display: flex;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+.items-center {
+    align-items: center;
+}
+.items-start {
+    align-items: flex-start;
+}
+.items-end {
+    align-items: flex-end;
+}
+.items-center {
+    align-items: center;
+}
+.justify-start {
+    justify-content: start;
+}
+.justify-end {
+    justify-content: end;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-center {
+    justify-content: center;
+}
+.hidden {
+    display: none;
+}
+.block {
+    display: block;
+}
+.grid {
+    display: grid;
+}
+@for $i from 1 through 12 {
+    .grid-col-#{$i} {
+        grid-template-columns: repeat($i, minmax(0, 1fr));
+    }
+    .col-span-#{$i} {
+        grid-column: span $i / span $i;
+    }
+}
+@for $i from 1 through 20 {
+    .gap-x-#{$i} {
+        column-gap: 0.25rem * $i;
+    }
+    .gap-y-#{$i} {
+        row-gap: 0.25rem * $i;
+    }
+    .gap-#{$i} {
+        column-gap: 0.25rem * $i;
+        row-gap: 0.25rem * $i;
+    }
+}

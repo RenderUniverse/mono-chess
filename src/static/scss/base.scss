@@ -1,0 +1,51 @@
+// break points
+$sm: 640px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1280px;
+$xxl: 1536px;
+
+// font
+$fontSize: 14px;
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-size: $fontSize;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', system-ui, -apple-system, sans-serif;
+}
+
+input,
+button {
+    font-size: $fontSize;
+}
+
+.responsive {
+    margin-left: auto;
+    margin-right: auto;
+    @media (max-width: $sm) {
+        max-width: 100%;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+    @media (min-width: $sm) {
+        max-width: 540px;
+    }
+    @media (min-width: $md) {
+        max-width: 720px;
+    }
+    @media (min-width: $lg) {
+        max-width: 960px;
+    }
+    @media (min-width: $xl) {
+        max-width: 1140px;
+    }
+    @media (min-width: $xxl) {
+        max-width: 1420px;
+    }
+}

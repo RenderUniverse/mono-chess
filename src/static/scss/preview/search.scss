@@ -1,0 +1,28 @@
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--line-color);
+    padding: 0.5rem;
+
+    .search-bar-btn,
+    .search-bar-input {
+        border: none;
+        outline: none;
+        &:focus {
+            outline: none;
+        }
+        background-color: transparent;
+    }
+
+    .search-bar-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--gray-500);
+        cursor: pointer;
+    }
+    .search-bar-input {
+        flex-grow: 1;
+    }
+}
